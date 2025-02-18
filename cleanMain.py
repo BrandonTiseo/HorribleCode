@@ -1,4 +1,11 @@
+'''
+Python Program designed to mimic the pokemon video game in the terminal.
+CLEAN VARIANT
 
+Names: Brandon Tiseo, Sean Devlin
+Emails: Btiseo@charlotte.edu, Sdevlin1@charlotte.edu
+Date:2/18/2025
+'''
 
 #General Pokémon class all subtypes inherit from.
 class Pokemon():
@@ -31,7 +38,7 @@ class Pokemon():
     def __str__(self):
         return f"{self.name}({self.ptype})\nHealth: {self.health} hp\n "
 
-
+#Subclasses of Pokemon
 class WaterType(Pokemon):
     def __init__(self):
         super().__init__("Mudkip", 200, 40, "Water")
